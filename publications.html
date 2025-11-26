@@ -1,0 +1,824 @@
+{% extends "base.html" %}
+
+{% block title %}Publications{% endblock %}
+
+{% block content %}
+    <!-- Internal CSS for Tab Styles -->
+    <style>
+        .default-tab-style {
+            color: #6b7280; /* Gray 500 */
+            border-color: transparent;
+        }
+        .default-tab-style:hover {
+            color: #1e40af; /* Blue 700 */
+            border-color: #3b82f6; /* Blue 500 */
+        }
+        .active-tab-style {
+            color: #1d4ed8; /* Blue 700 */
+            border-color: #3b82f6; /* Blue 500 */
+            font-weight: 700; /* Semibold */
+        }
+    </style>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-blue-800 mb-3">Selected Publications</h1>
+            <p class="text-xl text-gray-600">Explore the key journal articles published by our research team.</p>
+            <hr class="mt-4 w-24 mx-auto border-4 border-emerald-500 rounded-full">
+        </header>
+
+        <!-- Tab Navigation for Publication Years (2025 down to 2021) -->
+        <div class="mb-10 border-b border-gray-200">
+            <div class="flex flex-wrap justify-center -mb-px space-x-3 sm:space-x-4 lg:space-x-6">
+                <!-- Initial active tab is 2025 -->
+                <button 
+                    id="tab-2025-button" 
+                    class="tab-button inline-flex items-center justify-center p-4 border-b-2 font-medium text-lg sm:text-xl group transition duration-300 active-tab-style" 
+                    data-target="content-2025">
+                    2025
+                </button>
+                <button 
+                    id="tab-2024-button" 
+                    class="tab-button inline-flex items-center justify-center p-4 border-b-2 font-medium text-lg sm:text-xl group transition duration-300 default-tab-style" 
+                    data-target="content-2024">
+                    2024
+                </button>
+                <button 
+                    id="tab-2023-button" 
+                    class="tab-button inline-flex items-center justify-center p-4 border-b-2 font-medium text-lg sm:text-xl group transition duration-300 default-tab-style" 
+                    data-target="content-2023">
+                    2023
+                </button>
+                <button 
+                    id="tab-2022-button" 
+                    class="tab-button inline-flex items-center justify-center p-4 border-b-2 font-medium text-lg sm:text-xl group transition duration-300 default-tab-style" 
+                    data-target="content-2022">
+                    2022
+                </button>
+                <button 
+                    id="tab-2021-button" 
+                    class="tab-button inline-flex items-center justify-center p-4 border-b-2 font-medium text-lg sm:text-xl group transition duration-300 default-tab-style" 
+                    data-target="content-2021">
+                    2021
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab Content Areas -->
+        <section class="space-y-8">
+            
+            <!-- 2025 Publications (Content fixed) -->
+            <div id="content-2025" class="tab-content space-y-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-emerald-500 pl-4">Publications in 2025</h2>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/39577114/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Biomechanical differences of Asian knee osteoarthritis patients during standing and walking using statistical parametric mapping: A cross-sectional study.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        The Knee, 52, 155-163.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Hu, Y., Teng, P.S.P., Wu, T-L., Clark, R.A., Pua, Y-H., Roberts, O., Yong, J., Alhossary, A.A., Lim, L.S., Chong, D.Y.R., Ang, W.T., & Tan, B.Y.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/40974606/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        DMA Clinical Pilates exercises improved clinical and biomechanical outcomes for adults with nonspecific chronic low back pain: a randomized controlled trial
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Disability and Rehabilitation, 20, 1-14.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kwok, B. C., Lim, J. X. L., Wong, J. K. H., Tan, J. J. R., Kumar, K., Smith, H. E., & Kong, P. W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.worldscientific.com/doi/abs/10.1142/S021951942450026X" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Single-leg squat postural sway reliability: How many trials to analyze for chronic low back pain?
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Journal of Mechanics in Medicine and Biology, 25(1), 2450026.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kwok, B.C., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/40056510/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Clinical Pilates exercises for adults with chronic low back pain improve single-leg squat postural control and lumbopelvic-hip flexibility.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Gait and Posture, 119, 127-134.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kwok, B.C., Soh, R.E.C., Smith, H.E., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/40975068/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Predicting running-related injuries from functional, kinetic and kinematic data.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                       International Journal of Sports Medicine.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Loh, R.B.C., Pan, J.W., Iskandar, M.N.S., & Kong, P.W.*
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.worldscientific.com/doi/10.1142/S0219519425300042?srsltid=AfmBOopOLn-_lr7GqtiQYbPcZQug121f5r_TfkqYpDgTHAyLOqfUTEES" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Biomechanics of the rear foot-elevated split squat - a scoping review.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Journal of Mechanics in Medicine and Biology, 25(7).
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Palamarcukas, I., Tang, Y. & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/39848097/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Biomechanical analysis of step-up and step-down tasks in knee osteoarthritis: Insights from leading and trailing limbs.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Clinical Biomechanics (Bristol), 122, 106436.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Roberts, O.*, Wu, T.L., Teng, P., Lau, J.L., Pua, Y.H., Clark, R.A., Hu, Y., & Tan, B.Y.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 2024 Publications (Content fixed) -->
+            <div id="content-2024" class="tab-content hidden space-y-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-emerald-500 pl-4">Publications in 2024</h2>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/37459607/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Low back pain and biomechanical characteristics of back muscles in firefighters.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Ergonomics, 67(5), 650-659.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong P.W.*, Kan, T.Y.W., Mohamed Jam il, R.A.G.B., Teo, W.P., Pan, J.W., Hafiz Abd Halim, M.N., Abu Bakar Maricar, H.K. & Hostler, D.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/38703721/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Effectiveness of a passive military exoskeleton in off-loading weight during static and dynamic load carriage: A randomised cross-over study.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Applied Ergonomics, 119, 104293.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong P.W.*, Koh, A.H., Ho, M.Y.M., Iskandar, M.N.S., & Lim, C.X.E.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.mdpi.com/2076-3417/14/11/4815" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Assessing table tennis technical proficiency in individuals with disabilities: A scoping review.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Applied Sciences, 14, 4815.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P.W.* & Ma, C.M.S.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/39087569/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Biomechanics of step-off drop landings are affected by limb dominance and lead limb in task initiation.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Journal of Sports Sciences, 42(12), 1147-1156.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P.W.*, Tang, Y., & Lam, W.K.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.mdpi.com/2076-3417/14/19/8616" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Feasibility of a novel movement preference approach to classify case complexity for adults with non-specific chronic low back pain.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Applied Sciences, 14(19), 8616.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kwok, B.C., Lim, J.X.L., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/39336469/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Identifying the problem side with single-leg squat and hamstrings flexibility for non-specific chronic low back pain.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Medicina, 60, 1428.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kwok, B.C., Smith, H.E. , & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/34542383/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Air pistol shooting: Upper limb muscle activation between training and simulated competition.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sports Biomechanics, 23(10), 1726-1737.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Loh, S.K., Lim, J.Z., Pan, J.W., Aziz, L., Lee, M.J.C., & Kong, P.W.*
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/36424768/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Influence of expertise level on techniques of applying top and back spins in cue sports.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sports Biomechanics, 23(12), 3589-3601.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Pan, J.W., Komar, J., Yang, C. & Kong, P.W.*
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/34738493/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Regression model for predicting knee flexion angles using ankle angles, body mass index and generalized joint laxity.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sports Biomechanics, 23(11), 1990-2005.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Teng, P.S.P., Leong, K.F., & Kong, P.W.*
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://accscience.com/journal/MSAM/3/3/10.36922/msam.4084" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Material extrusion-based printing optimization of recycled HDPE filaments made from used milk jugs.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Materials Science in Additive Manufacturing, 3(3), 4084.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Teng, S.P.P., Tee, C .H., Tan, H.B., & Leong, K.F.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/35296550/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Influence of combat boot types on in-shoe forces and perceived comfort during unloaded and loaded walking.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        BMJ Military Health, 170, 37-42.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Yeo, E.X.S., Chhabra, K., & Kong, P.W.*
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 2023 Publications (Content fixed - ACL citation removed) -->
+            <div id="content-2023" class="tab-content hidden space-y-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-emerald-500 pl-4">Publications in 2023</h2>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/36772210/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Field-based biomechanical assessment of the snatch in Olympic Weightlifting using wearable in-shoe sensors and videos-preliminary report.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sensors, 23(3), 1171.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Ang, C.L., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.worldscientific.com/doi/abs/10.1142/S0219519423400171?srsltid=AfmBOoprivTSPlLU0xFugaq7THSgHaCmISRnXh8NL-dEVsNuwQWcjnLP&journalCode=jmmb" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Muscle rub enhanced explosive leg lower but not flexibility or balance in college athletes.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Journal of Mechanics in Medicine and Biology, 23(6), 2340017.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Chaim, M.J., & Kong, P.W.*
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/38139605/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Automated service height fault detection using computer vision and machine learning for badminton matches.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sensors, 23(24), 9759.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Goh, G.L., Goh, G.D., Pan, J.W., Teng, P.S.P., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/37520294/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Crossover gait in running and measuring foot inversion angle at initial foot strike: a front-view video analysis approach.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Frontiers in Bioengineering and Biotechnology, 11, 1210049.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Iskandar, M.N.S., Loh, R.B.C., Ho, M.Y.M., Pan, J.W., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <a href="https://www.mdpi.com/1424-8220/23/5/2847" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Editorial - Special issue on "Sensor technology for enhancing training and performance in sport"
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sensors, 23(5), 2847.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P.W.*
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/37514763/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Validation of in-shoe force sensors during loaded walking in military personnel.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sensors, 23(14), 6465.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P.W.*, Iskandar, M.N.S., Koh, A. H., Ho, M.Y.M., & Lim, C.X.E.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://paahjournal.com/articles/10.5334/paah.226" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Foot morphology and running gait pattern between the left and right limbs in recreational runners.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Physical Activity and Health, 7(1), 43-52.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Pan, J.W., Ho, M.Y.M., Loh, R.B.C., Iskandar, M.N.S., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/36351429/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Adaptive regulation in a stable performance environment: Trial-to-trial consistency in cue sports performance.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Motor Control, 27(2), 242-257.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Pan, J.W., Kong, P.W., & Komar, J.*
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/37842036/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Computer simulation on the cueing movements in cue sports: a validation study.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        PeerJ, 11, e16180.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Pan., J.W., Mei, Q., Fernandez, J., Song, H., Komar, J., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/37705053/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Effects of textured insoles and elastic braces on dynamic stability in patients with functional ankle instability.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Journal of Foot and Ankle Research, 16(1), 59.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Tang, Y., Li, X., Li, Y., Liang, P., Guo, X., Zhang, C., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/37761767/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Effects of ankle orthoses, taping, and insoles on postural stability of individuals with chronic ankle instability: a systematic review.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Healthcare (Basel), 11(18), 2570.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Tang, Y., Liang, P., Pan, J.W., Zhang, C., Ren, H., Cheng, S., & Kong, P.W.*
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2022 Publications (Content fixed) -->
+            <div id="content-2022" class="tab-content hidden space-y-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-emerald-500 pl-4">Publications in 2022</h2>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/35271035/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Inter-unit consistency and validity of 10-Hz GNSS units in straight-line sprint running.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sensors, 22(5), 1888.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Chahal, A. K., Lim, J. Z., Pan, J. W., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/35709609/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        The biomechanical effects of 3D printed and traditionally made foot orthoses in individuals with unilateral plantar fasciopathy and flat feet.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Gait and Posture, 96, 257-264.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Ho, M., Nguyen, J., Heales, L., Stanton, R., Kong, P.W.*, & Kean, C.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/35902077/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Validation of Dance-Specific Balance Test: Evidence From Comparisons Between Dancers and Nondancers
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Motor Control, 26(4), 558-567.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Johari, M. R., Kee, Y. H., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/36159702/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Functional versus conventional strength and conditioning programs for back injury prevention in emergency responders
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Frontiers in Bioengineering and Biotechnology, 10, 918315.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P. W., Kan, T. Y. W., Mohamed Jamil, R. A. G. B., Teo, W. P., Pan, J. W., Hafiz Abd Halim, M. N., Abu Bakar Maricar, H. K., & Hostler, D.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/35871683/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Shoulder biomechanics of para-table tennis: a case study of a standing class para-athlete with severe leg impairment
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        BMC Sports Science, Medicine and Rehabilitation , 24(14), 143.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P. W.*, & Yam, J. W.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2022.885853/full" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Performing meaningful movement analysis from publicly available videos using free software - A case of acrobatic sports
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                       Frontiers in Education, 7, 885853.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P.W.*, Sim, A.*, Chiam, M.J.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/31578122/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Effect of shoe modifications on biomechanical changes in basketball: A systematic review
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sports Biomechanics, 21(5), 577-603.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Lam, W.K., Kan, W.H., Chia, J., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://journals.sagepub.com/doi/10.1177/1754337120901984" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Influence of basketball shoe midsole inserts featuring different mechanical rebound properties on biomechanical loading and subjective perception during a side-cutting maneuver
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                       Proceedings of the Institution of Mechanical Engineers, Part P: Journal of Sports Engineering and Technology, 236(1), 24-35.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                       Pan, J.W., Sterzing, T., Pang, J.W., Chua, Y.K., & Kong, P.W.* 
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.tandfonline.com/doi/full/10.1080/17452759.2022.2090384" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        A methodology to design and fabricate a smart brace using low-cost additive manufacturing.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Virtual and Physical Prototyping, 17(7), 932-947.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Teng, P.S.P., Leong, K.F.*, Kong, P.W., Er, B.H., Chew, Z.Y., Tan P.S., & Tee, C.H. 
+                    </p>
+                </div>
+                
+            </div>
+
+            <!-- 2021 Publications (Content fixed) -->
+            <div id="content-2021" class="tab-content hidden space-y-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-emerald-500 pl-4">Publications in 2021</h2>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://paahjournal.com/articles/10.5334/paah.111" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Acquiring expertise in precision sport - What can we learn from an elite snooker player?
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Physical Activity and Health Journal, 5(1), 98-106.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P.W., Pan, J.W., Chu, D.P.K., Cheung, P.M., & Lau, P.W.C.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://www.worldscientific.com/doi/abs/10.1142/S0219519421500573" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Within-day and between-day reliability of a FBG-based smart sock system for measuring active toe flexion displacement of the hallux. 
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Journal of Mechanics in Medicine and Biology, 21(7), 2150057.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kong, P.W., Pan, J.W., Fong, D.T., Leow, Y., Liu, Y., Chan, C.C., & Heng, M.L.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/34827088/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        The theoretical framework of the Clinical Pilates exercise method in managing non-specific chronic low back pain: a narrative review.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Biology, 10(11), 1096.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Kwok, B.C., Lim, X.L.J., & Kong, P.W.* 
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/33531054/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Development of new 9-ball test protocols for assessing expertise in cue sports.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        BMC Sports Science, Medicine and Rehabilitation, 12(1), 9.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Pan, J.W., Komar, J., & Kong, P.W.* 
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/34393918/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Can a good break shot determine the game outcome in 9-ball?
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Frontiers in Psychology, 29(12), 691043.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Pan, J.W., Komar, J., Sng, S.B.K., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/33118836/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        An exploratory study of the use of ultrasound in the measurement of anterior tibial translation under gastrocnemius muscle stimulation.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Research in Sports Medicine, 51(8), 380-395.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Teng, P.S.P., Leong, K.F., Phua, P.Y.X., & Kong, P.W.*
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">
+                        <!-- LINK ADDED HERE -->
+                        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8706454/" target="_blank" class="text-blue-800 hover:text-emerald-500 transition duration-150 ease-in-out">
+                        Measuring upper limb kinematics of forehand and backhand topspin drives with IMU sensors in wheelchair and able-bodied table tennis players.
+                        </a>
+                    </h3>
+                    <p class="text-lg text-gray-900 font-semibold mb-3 italic">
+                        Sensors, 21(24), 8303.
+                    </p>
+                    <p class="text-gray-900 font-semibold text-lg">
+                        Yam, J.W., Pan, J.W., & Kong, P.W.*
+                    </p>
+                </div>
+
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- JavaScript for Tab Switching Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            const activateTab = (targetId, button) => {
+                // Hide all content and reset all buttons
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active-tab-style');
+                    btn.classList.add('default-tab-style');
+                });
+
+                // Show target content and activate clicked button
+                const targetContent = document.getElementById(targetId);
+                if (targetContent) {
+                    targetContent.classList.remove('hidden');
+                }
+                button.classList.remove('default-tab-style');
+                button.classList.add('active-tab-style');
+            };
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const targetId = event.currentTarget.getAttribute('data-target');
+                    activateTab(targetId, event.currentTarget);
+                });
+            });
+
+            // Set initial active state (2025 is set as active in HTML, but this ensures script compliance)
+            const initialButton = document.getElementById('tab-2025-button');
+            const initialContent = document.getElementById('content-2025');
+
+            if (initialButton && initialContent) {
+                 // Ensure the 2025 button has the active style on load
+                initialButton.classList.remove('default-tab-style');
+                initialButton.classList.add('active-tab-style');
+                 // Ensure the 2025 content is visible
+                initialContent.classList.remove('hidden');
+            } else if (tabButtons.length > 0 && tabContents.length > 0) {
+                // Fallback to first tab if 2025 is somehow misconfigured
+                activateTab(tabButtons[0].getAttribute('data-target'), tabButtons[0]);
+            }
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+    <!-- Added min-h-[75vh], flex, and items-center to center content vertically on the screen -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[75vh] flex flex-col justify-center items-center">
+        <header class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold text-blue-800 mb-3">Contact Us</h1>
+            <p class="text-xl text-gray-600">Contact our world-leading faculty for future collaborations.</p>
+            <hr class="mt-4 w-24 mx-auto border-4 border-emerald-500 rounded-full">
+        </header>
+
+        <!-- Combining all information (Faculty, Email, Phone, and Map) into a single box -->
+        <div class="max-w-4xl mx-auto w-full">
+            <div class="bg-white p-8 rounded-xl shadow-2xl border-l-8 border-blue-600 space-y-6 text-center">
+                
+                <!-- 1. Faculty Contacts (NOW WITH ENLARGED PHOTOS) -->
+                <div class="pb-4"> 
+                    
+                    <!-- --- Contact Block 1: Assoc Prof Veni Kong (WITH PHOTO) --- -->
+                    <!-- Increased pb-4 to pb-6 for more space above the divider -->
+                    <div class="pb-6 flex flex-col items-center justify-center sm:flex-row sm:space-x-6">
+                        
+                        <!-- Image Container (w-36 h-36 for enlarged size) -->
+                        <div class="mb-4 sm:mb-0">
+                            <img src="static/images/veni-kong.jpeg"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/144x144/1d4ed8/ffffff?text=VK';"
+                                 alt="Photo of Assoc Prof Veni Kong" 
+                                 class="w-36 h-36 object-cover rounded-full shadow-lg border-4 border-blue-200"/>
+                        </div>
+                        
+                        <!-- Text Details -->
+                        <div class="text-center">
+                            <p class="text-xl font-bold text-gray-900 mb-1">Assoc Prof Veni Kong</p>
+                            <div class="space-y-1">
+                                <p class="text-gray-700 text-lg">
+                                    <span class="font-semibold text-gray-800">Email:</span> 
+                                    <a href="mailto:puiwah.kong@nie.edu.sg" class="text-blue-600 hover:underline">puiwah.kong@nie.edu.sg</a>
+                                </p>
+                                <p class="text-gray-700 text-lg">
+                                    <span class="font-semibold text-gray-800">Phone:</span> 
+                                    +65 6790 3897
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- --- Contact Block 2: Asst Prof Phillis Teng (WITH PHOTO) --- -->
+                    <!-- Increased pt-4 to pt-6 to push the content down further below the divider -->
+                    <div class="pt-6 border-t border-gray-200 flex flex-col items-center justify-center sm:flex-row sm:space-x-6">
+                        
+                        <!-- Image Container (w-36 h-36 for enlarged size) -->
+                        <div class="mb-4 sm:mb-0">
+                            <img src="static/images/phillis-teng.jpeg"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/144x144/1d4ed8/ffffff?text=PT';"
+                                 alt="Photo of Asst Prof Phillis Teng" 
+                                 class="w-36 h-36 object-cover rounded-full shadow-lg border-4 border-blue-200"/>
+                        </div>
+                        
+                        <!-- Text Details -->
+                        <div class="text-center">
+                            <p class="text-xl font-bold text-gray-900 mb-1">Asst Prof Phillis Teng</p>
+                            <div class="space-y-1">
+                                <p class="text-gray-700 text-lg">
+                                    <span class="font-semibold text-gray-800">Email:</span> 
+                                    <a href="mailto:phillis.teng@nie.edu.sg" class="text-blue-600 hover:underline">phillis.teng@nie.edu.sg</a>
+                                </p>
+                                <p class="text-gray-700 text-lg">
+                                    <span class="font-semibold text-gray-800">Phone:</span> 
+                                    +65 6219 6213
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Address -->
+                <div class="pb-4 pt-4 border-t border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Address</h3>
+                    <p class="text-gray-700 text-lg mb-1">
+                        Sports Biomechanics Laboratory (NIE5-B3-01),<br>
+                        Department of Physical Education and Sports Science,<br>
+                        National Institute of Education, Nanyang Technological University,<br>
+                        1 Nanyang Walk, Singapore 637616
+                    </p>
+                </div>
+
+                <!-- 3. Location Map Section (Remains last) -->
+                <div class="pt-6 border-t border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Location Map</h3>
+                    
+                    <div class="flex justify-center">
+                         <img src="{{ url_for('static', filename='images/lab-location-map.jpeg') }}"
+                             onerror="this.onerror=null; this.src='https://placehold.co/700x400/1d4ed8/ffffff?text=3D+Movement+Analysis+Lab+Layout';"
+                             alt="NIE Biomechanics Lab Layout" 
+                             class="w-full h-auto max-w-4xl rounded-lg mb-4 shadow-md"/>
+                    </div>
+                   
+                    <a href="https://maps.app.goo.gl/DF5rLnaANjUN1XvP9" target="_blank" 
+                       class="block text-lg text-blue-600 font-semibold hover:text-blue-700 hover:underline transition duration-300 mt-4">
+                        View Location on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

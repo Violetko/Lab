@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{% block title %}People{% endblock %}
+
+{% block content %}
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-blue-800 mb-3">Our Team</h1>
+            <p class="text-xl text-gray-600">Meet our world-leading faculty, research staff, and graduate students specialising in sports biomechanics.</p>
+            <hr class="mt-4 w-24 mx-auto border-4 border-emerald-500 rounded-full">
+        </header>
+
+        <!-- 1. Faculty Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 border-b pb-3 mb-8 border-blue-600">Faculty</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Faculty Member 1: Veni Kong -->
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-blue-600 text-center">
+                    <img src="static/images/veni-kong.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/128x128/1d4ed8/ffffff?text=VK';"
+                         alt="Assoc Prof Veni Kong" 
+                         class="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-blue-100"/>
+                    <h3 class="text-2xl font-bold text-gray-900">Assoc Prof Kong Pui Wah (Veni)</h3>
+                    <p class="text-blue-600 font-medium mb-3">Principal Investigator</p>
+                    <p class="text-gray-600 text-sm">Research focus on high-performance sports, gait, footwear, foot health, low back pain, massage, and sports injuries.</p>
+                    <a href="mailto:puiwah.kong@nie.edu.sg" class="text-sm text-emerald-600 hover:underline mt-2 inline-block">Email Veni</a>
+                </div>
+
+                <!-- Faculty Member 2: Phillis Teng -->
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-blue-600 text-center">
+                    <img src="static/images/phillis-teng.jpeg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/128x128/1d4ed8/ffffff?text=PT';"
+                         alt="Asst Prof Phillis Teng" 
+                         class="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-blue-100"/>
+                    <h3 class="text-2xl font-bold text-gray-900">Asst Prof Teng Soek Po (Phillis)</h3>
+                    <p class="text-blue-600 font-medium mb-3">Principal Investigator</p>
+                    <p class="text-gray-600 text-sm">Research focus on biomechanics, injury risk reduction, and product development.</p>
+                    <a href="mailto:phillis.teng@nie.edu.sg" class="text-sm text-emerald-600 hover:underline mt-2 inline-block">Email Phillis</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. Research Staff Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 border-b pb-3 mb-8 border-emerald-500">Research Staff</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Staff Card 1 (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-emerald-500 text-center">
+                    <img src="static/images/violet-ko.jpeg"
+                         alt="Placeholder Research Staff" 
+                         class="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-emerald-100"/>
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Ko Man Chi (Violet)</h3>
+                    <p class="text-emerald-600 font-medium mb-3">Research Fellow</p>
+                    <p class="text-gray-600 text-sm">Research focus on sports biomechanics, performance, recovery and rehabilitation.</p>
+                </div>
+
+                <!-- Staff Card 2 (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-emerald-500 text-center">
+                    <img src="https://placehold.co/128x128/ccc/666?text=RA"
+                         alt="Placeholder Research Assistant" 
+                         class="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-emerald-100"/>
+                    <h3 class="text-2xl font-bold text-gray-900">Mr. Tee Chor Hiong (Frankie)</h3>
+                    <p class="text-emerald-600 font-medium mb-3">Research Associate</p>
+                    <p class="text-gray-600 text-sm">Research focus on </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. PhD Students Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 border-b pb-3 mb-8 border-indigo-600">Graduate Students</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+ 
+            <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-xl border-t-4 border-indigo-600 text-center hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900">Lim Chen</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Student (2024 - present)</p>
+                    <p class="text-gray-600 text-sm">Topic: </p>
+                </div>
+                
+            <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-xl border-t-4 border-indigo-600 text-center hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900">Amandeep Kaur Chahal</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Candidate (2024 - present)</p>
+                    <p class="text-gray-600 text-sm">Topic: Collective Behaviours in Netball: Leveraging Performance Data and AI for Identifying Match Styles and Tactical Variables</p>
+                </div>
+
+                <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Ignas Palamarcukas</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Candidate (2023 - present)</p>
+                    <p class="text-gray-600 text-sm">Topic: Mechanical energy flow during rear foot elevated split squat.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Yam Jia Wen</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Candidate (2021 - present)</p>
+                    <p class="text-gray-600 text-sm">Topic: Coaching para-table tennis effectively using a constraint-led approach.</p>
+                </div>
+
+                  <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Lim Ziyuan, Jolene</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Candidate (2020 - present)</p>
+                    <p class="text-gray-600 text-sm">Topic: Visual-motor behaviour in the identification and training of field hockey goalkeepers.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Kwok Boon Chong</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Graduate (2020 - 2025)</p>
+                    <p class="text-gray-600 text-sm">Topic: Clinical Pilates and low back pain.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Loh Ban Chuan</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Gradaute (2020 - 2025)</p>
+                    <p class="text-gray-600 text-sm">Topic: Treadmill Running Analysis Model (TRAM) for identifying atypical biomechanics: An injury prediction model.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Pan Jingwen</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Gradaute (2018 - 2023)</p>
+                    <p class="text-gray-600 text-sm">Thesis title: Understanding the biomechanics of cue sports from experimental and theoretical approaches.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Nin Zijie, Darren</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Gradaute (2014 - 2019)</p>
+                    <p class="text-gray-600 text-sm">Thesis title: Hamstring strain injuries: Understanding risk factors and intervention strategies.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Tay Sihui, Cheryl</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Gradaute (2013 - 2018)</p>
+                    <p class="text-gray-600 text-sm">Thesis title: Towards an understanding of crew boat sprint kayaking: On-water investigations of stroke synchronisation, seat order, and performance.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Teng Soek Po, Phillis</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Gradaute (2012 - 2017)</p>
+                    <p class="text-gray-600 text-sm">Thesis title: Investigation of foot landing techniques and muscle activation during single-leg drop landings: Implications for non-contact anterior cruciate ligament injuries.</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Cai Cong Cong </h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Gradaute (2011 - 2017)</p>
+                    <p class="text-gray-600 text-sm">Thesis title: Exercise therapy for runners with chronic low back pain - back or lower limb training?</p>
+                </div>
+
+                 <!-- PhD Card (Placeholder) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900">Dr. Tong Weng Kong, Jasper</h3>
+                    <p class="text-indigo-600 font-medium mb-3">PhD Gradaute (2010 - 2015)</p>
+                    <p class="text-gray-600 text-sm">Thesis title: Longitudinal study on the foot development of school children.</p>
+                </div>
+
+            </div>
+        </section>
+        
+    </div>
+{% endblock %}

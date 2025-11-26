@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Hero Section with Image (New Addition) -->
+    <div class="relative bg-gray-100 mb-12">
+        <!-- This is the main image for the hero section -->
+        <img class="w-full h-200 object-cover object-center" 
+             src="static/images/amandeep.jpeg" 
+             alt="Cutting-edge research lab environment or team photo">
+        
+        <!-- Overlay for text and visual depth -->
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div class="text-center text-white p-6 rounded-lg">
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+                    Pioneering the Future of Human Movement
+                </h1>
+                <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto">
+                The NIE Sport Biomechanics Laboratory is dedicated to advancing athletic performance, injury prevention, and physical literacy through cutting-edge motion analysis and technology.
+                </p>
+                <a href="/research" class="mt-8 inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-xl transform hover:scale-105">
+                    Explore Our Research
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Sections -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        
+        <!-- Welcome Section -->
+        <section class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Our Lab</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Our mission is to apply rigorous scientific methods to understand and optimize human movement and health. We collaborate globally and utilize state-of-the-art technology to drive meaningful discoveries.
+            </p>
+        </section>
+
+        <!-- Key Areas Section (Inferred content) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-blue-500">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Biomechanics</h3>
+                <p class="text-gray-700">Detailed analysis of human motion using motion capture and force plate systems to prevent injury and enhance athletic performance.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-emerald-500">
+                <h3 class="text-2xl font-semibold text-emerald-600 mb-3">Rehabilitation</h3>
+                <p class="text-gray-700">Developing novel, data-driven protocols for post-injury recovery and improving mobility in older adults.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-indigo-500">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Wearable Technology</h3>
+                <p class="text-gray-700">Integrating wearable sensors and machine learning to collect and interpret real-world movement data outside the lab environment.</p>
+            </div>
+        </section>
+        
+    </div>
+{% endblock %}
